@@ -49,6 +49,6 @@ MIT. Code and data are released for reuse and extension. See [`LICENSE`](LICENSE
 
 ## About
 
-This study was produced as a portfolio piece for AI evaluation roles. My background is in high-stakes assessment development; I work on the LSAT at LSAC. The methodology here brings a few concepts from assessments and psychometrics (partial credit, controlled distractors, item-level analysis) into a frontier-model evaluation context where they are underused. Substantially more work along these lines is possible.
+This is an exploratory study examining whether methodologies and mindset from high-stakes assessment development can be applied to AI model evaluation. The study brings a few concepts from assessments and psychometrics (partial credit, controlled distractors, item-level analysis) into a frontier-model evaluation context where they are underused. Substantially more work along these lines is possible.
 
 Reach out at sakovichj@gmail.com or via GitHub issues if you have questions or want to extend the work.
