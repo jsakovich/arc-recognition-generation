@@ -50,7 +50,7 @@ What is clear is that binary scoring conflates these states. From a measurement 
 
 **Finding 2.** A small recognition-generation gap is present. Across 30 tasks, the four-quadrant cross-tabulation in Chart 2 shows two tasks where the model failed to generate the correct answer in any of three attempts but recognized it correctly in both recognition trials. Two of 30 is a small absolute count, and statistical claims at this scale are thin, but each individual case is striking.
 
-![Chart 2: Generation vs. Recognition outcomes per task](charts/chart_2_four_quadrant.png)
+<img src="charts/chart_2_four_quadrant.png" alt="Chart 2: Generation vs. Recognition outcomes per task" width="500">
 
 `e6de6e8f`: no response was generated at all. The token budget was exhausted on all three attempts before the model produced any output. Yet when shown the correct answer alongside a mechanically generated distractor, the model identified the correct one in both trials. This is the strongest possible demonstration of a recognition-generation gap: successful generation is not a prerequisite for successful discrimination.
 
@@ -64,7 +64,7 @@ These findings have broader implications. Several approaches to improving model 
 
 **Finding 3.** Distractor type matters substantially. Chart 3 shows recognition accuracy split by distractor source: 100% (26/26) on perturbation distractors, 61.8% (21/34) on distractors drawn from the model's own wrong attempts. Despite both distractor types having similar Hamming similarity to ground truth (0.97 for perturbations vs. 0.93 for model attempts), the difference in recognition accuracy is large.
 
-![Chart 3: Recognition accuracy by distractor type](charts/chart_3_distractor_source.png)
+<img src="charts/chart_3_distractor_source.png" alt="Chart 3: Recognition accuracy by distractor type" width="500">
 
 Hamming similarity does not by itself explain distractor difficulty. The model's wrong attempts have some other property that makes them harder to discriminate from correct answers. One reading: model-generated wrongs encode coherent if incorrect interpretations of the puzzle's rule, while mechanical perturbations do not. Perturbations are inconsistent with any rule the model would seriously entertain, so they are detected as wrong almost immediately. The model's own wrongs follow a plausible-but-wrong rule, and the model can not reliably discriminate them from the correct answer.
 
