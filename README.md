@@ -16,7 +16,7 @@ A small single-model study applying assessment-development concepts (partial cre
 
 - [`WRITEUP.md`](WRITEUP.md) — full study writeup with charts and findings
 - [`arc_1_recog_gen.py`](arc_1_recog_gen.py) — harness module: API client, prompt builders, parsers, scoring
-- [`notebooks/`](notebooks/) — Jupyter notebook with the full study run, end to end
+- [`notebook.ipynb`](notebook.ipynb) — Jupyter notebook with the full study run, end to end
 - [`data/`](data/) — sampled task IDs, distractors, generation results, recognition results
 - [`charts/`](charts/) — chart images referenced in the writeup
 
@@ -24,10 +24,10 @@ A small single-model study applying assessment-development concepts (partial cre
 
 ```bash
 # Clone this repo and ARC-AGI as siblings
-git clone https://github.com/<your-username>/<this-repo>.git
+git clone https://github.com/jsakovich/arc-recognition-generation.git
 git clone https://github.com/fchollet/ARC-AGI.git
 
-cd <this-repo>
+cd arc-recognition-generation
 
 # Create venv and install dependencies
 python3 -m venv venv
@@ -38,7 +38,7 @@ pip install -r requirements.txt
 echo "ANTHROPIC_API_KEY=sk-ant-..." > .env
 
 # Run the notebook end to end
-jupyter lab notebooks/
+jupyter lab notebook.ipynb
 ```
 
 API cost for the full study is approximately $15.
